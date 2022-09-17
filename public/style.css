@@ -1,0 +1,126 @@
+#telegraph {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+  cursor: pointer;
+}
+
+#audioMenu {
+  background-color: #282828;
+  border: solid 1px #ebdbb2;
+  width: 184px;
+  border-radius: 10px;
+  margin-top: 5px;
+  color: #ebdbb2;
+  margin-left: 5px;
+}
+
+#audioButton {
+  background-color: transparent;
+  border: solid 1px #ebdbb2;
+  color: #ebdbb2;
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+}
+
+#buttonWrapper {
+  display: flex;
+  height: 42px;
+  justify-content: space-evenly;
+  margin: 0px;
+}
+
+#rangeWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 6px;
+}
+
+#rangeNumberWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#rangeNumber {
+  padding: 2px 5px;
+  margin: 0px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: solid 1px #ebdbb2;
+  min-width: 22px;
+  text-align: center;
+}
+
+#range {
+  margin: 0px;
+  -webkit-appearance: none;
+  height: 15px;
+  background: #111111;
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+}
+
+#range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #d79921;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#beepone,
+#beeptwo {
+  display: none;
+}
+
+#beep1 {
+  border-radius: 10px 0px 00px 10px;
+  margin-right: 0px;
+}
+
+#beep2 {
+  border-radius: 0px 10px 10px 0px;
+  margin-left: 0px;
+}
+
+label > div {
+  cursor: pointer;
+  width: 70px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border: solid 1px #ebdbb2;
+}
+
+input:checked + label > div {
+  color: #282828;
+  background-color: #ebdbb2;
+}
+
+body {
+  background-color: #282828;
+  padding: 0px;
+  margin: 0px;
+}
+
+.fadeStart {
+  opacity: 0;
+  transform: translate3d(0, 50px, 0);
+  transition: 0.4s all ease-in-out;
+}
+
+.fadeIn {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* https://coolors.co/689d6a-458588-d79921-cc241d-ebdbb2-282828 */
