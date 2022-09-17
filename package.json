@@ -1,0 +1,13 @@
+{
+  "name": "telegraphchatapp",
+  "version": "1.0.0",
+  "description": "Telegraph Chat App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^2.5.0"
+  }
+}
